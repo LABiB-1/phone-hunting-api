@@ -14,10 +14,16 @@
 
     </header>
     <main class="mb-24">
-       
-        <section class="flex justify-center items-center">
-            <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+        <section class="flex justify-end mr-48 mb-8">
+            <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs bg-slate-300 placeholder:text-black placeholder:text-xl text-black font-semibold" id="search-field" />
+            <button onclick="handleSearch()" class="btn btn-accent text-xl">Search</button>
+        </section>
+        <section>
+            <div id="phones-container" class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-20">
 
+            </div>
+            <div id="more-container" class="hidden grid justify-items-center mt-9">
+                <button onclick="" class="btn btn-outline text-black font-bold text-xl bg-slate-200">More</button>
             </div>
         </section>
 
