@@ -19,9 +19,14 @@
             <button onclick="handleSearch()" class="btn btn-accent text-xl">Search</button>
         </section>
         <section>
+            <!--loader-->
+            <div class="text-center my-44">
+                <span id="loading-spinner" class="loading loading-spinner text-info w-20 hidden"></span>
+            </div>
             <div id="phones-container" class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-20">
 
             </div>
+            <!--more button-->
             <div id="more-container" class="hidden grid justify-items-center mt-9">
                 <button onclick="" class="btn btn-outline text-black font-bold text-xl bg-slate-200">More</button>
             </div>
