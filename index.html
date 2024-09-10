@@ -10,26 +10,62 @@
 </head>
 
 <body class="bg-white pt-11">
-    <header>
-
+    <header class="mx-20">
+        <nav>
+            <div class="navbar mb-10">
+                <div class="flex-1">
+                  <a class="btn border-0 h-20 bg-cyan-100 text-[#0D6EFD] text-6xl">FLY</a>
+                </div>
+                <div class="flex-none">
+                    <button class="btn bg-[#0D6EFD] text-[#FFFFFF] font-bold text-xl">Sign Up</button>
+                </div>
+              </div>
+        </nav>
+        <section>
+            <h1 class="text-[#100F0F] text-6xl	font-bold text-center">Apple Iphone 13 Pro Max</h1>
+            <p class="text-center text-[#706F6F] font-normal text-lg mt-6">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+            <div class="text-center mt-8">
+                <button class="btn bg-[#0D6EFD] text-[#FFFFFF] font-bold text-xl">Buy Now</button>
+            </div>
+        </section>
     </header>
     <main class="mb-24">
         <section class="flex justify-end mr-48 mb-8">
-            <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs bg-slate-300 placeholder:text-black placeholder:text-xl text-black font-semibold" id="search-field" />
-            <button onclick="handleSearch()" class="btn btn-accent text-xl">Search</button>
+            <input type="text" placeholder="Search your phone"
+                class="input input-bordered w-full max-w-xs bg-slate-300 placeholder:text-black placeholder:text-xl text-black font-semibold"
+                id="search-field" />
+            <button onclick="handleSearch()" class="btn bg-[#0D6EFD] text-[#FFFFFF] font-bold	text-xl">Search</button>
         </section>
         <section>
             <!--loader-->
             <div class="text-center my-44">
                 <span id="loading-spinner" class="loading loading-spinner text-info w-20 hidden"></span>
             </div>
-            <div id="phones-container" class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-20">
+            <div id="phones-container"
+                class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-20">
 
             </div>
             <!--more button-->
             <div id="more-container" class="hidden grid justify-items-center mt-9">
-                <button onclick="" class="btn btn-outline text-black font-bold text-xl bg-slate-200">More</button>
+                <button onclick="handleMoreBtn()"
+                    class="btn btn-outline text-black font-bold text-xl bg-slate-200">More</button>
             </div>
+        </section>
+        <section>
+            <!--show details modal-->
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="show_details_modal" class="modal">
+                <div class="bg-[#FFFFFF] w-[47rem] h-[65rem]">
+                    <div id="phone-details-container">
+
+                    </div>
+                        <form method="dialog" class="text-right mr-10">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn bg-[#DC3545] text-[#FFFFFF] text-xl font-bold	w-40 h-16 rounded-lg">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
 
     </main>
