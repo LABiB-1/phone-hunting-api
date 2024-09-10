@@ -80,8 +80,8 @@ const handleShowDetails = async (id) =>{
 const showPhoneDetails = (phone) =>{
     const show_details_container = document.getElementById('phone-details-container');
     show_details_container.innerHTML =`
-    <div class="m-10"> 
-    <figure class="bg-[#0D6EFD0D] w-[42rem] h-[30rem] flex justify-center items-center">
+    <div class="mx-10 mt-5"> 
+    <figure class="bg-[#0D6EFD0D] w-[42rem] h-[25rem] flex justify-center items-center rounded-2xl">
                 <img
                   src="${phone.data.image}"
                   alt="Phone"
